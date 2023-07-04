@@ -19,10 +19,10 @@ public class ReadOne
              * .hasNext() looks to see if a line exists
              * but it doesn't read the line.
              */
-            while (fileIn.hasNext()) 
+            while (fileIn.hasNext()) // hasNext() returns a boolean as to whether there are more lines to read
             {
                 // Reads the entire line
-                String lineIn = fileIn.nextLine(); 
+                String lineIn = fileIn.nextLine(); // reads in that next line with nextLine();
                 // Output the line
                 System.out.println(lineIn);
             }

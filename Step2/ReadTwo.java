@@ -9,7 +9,7 @@ public class ReadTwo
     public static void main(String[] args)
     {
         try {
-            Scanner fileIn = new Scanner(new File("input.txt"));
+            Scanner fileIn = new Scanner(new File("/Users/angela/Desktop/Projects/FileIOJava/Step2/input.txt"));
 
             while (fileIn.hasNext()) 
             {
@@ -19,7 +19,7 @@ public class ReadTwo
                 String[] input = lineIn.split(",");
                 int sum = 0;
                 for (int i = 0; i < input.length; i ++) {
-                    sum += Integer.parseInt(input[i]);
+                    sum += Integer.parseInt(input[i]); // parses string value as a signed decimal value/converts to integer
                 }
                 System.out.println(sum);
             }
